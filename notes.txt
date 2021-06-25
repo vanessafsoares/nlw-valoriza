@@ -1,0 +1,22 @@
+
+yarn typeorm migration:run = inicia a criação das migrations
+
+yarn typeorm migration:create -n CreateUsers = cria a migration no projeto
+
+yarn typeorm -help
+
+yarn typeorm migration:revert = reverte a migration criada
+
+yarn typeorm entity:create -n Users = cria a nossa entity no projeto
+
+
+
+server -> controller -> SERVICE -> Repositories -> Banco de Dados
+
+JWT -> é um padrão de json web token, um token que passamos entre as nossas requisições
+- verificar se o usuário autenticado
+
+- o que são tipagens? 
+usamos apenas em ambiente de desenvolvimento
+
+sempre que tivermos o retorno de uma promisse temos que colocar um await
