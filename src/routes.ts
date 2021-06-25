@@ -15,6 +15,6 @@ const complimentController = new CreateComplimentController();
 router.post("/users", createUserController.handle)
 router.post("/tags", ensureAdmin, createTagController.handle) //rota, middleware, controller
 router.post("/login", authenticateUserController.handle)
-router.post("/compliments", createTagController.handle)
+router.post("/compliments", complimentController.handle)
 
 export { router };
