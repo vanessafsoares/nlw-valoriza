@@ -10,7 +10,8 @@ interface IUserRequest {
 }
 class CreateUserService {
 
-    async execute({ name, email, admin, password } : IUserRequest) {
+  // atribuindo o valor false no admin a rota permite que eu crie usuário sem passar o valor dele no body
+    async execute({ name, email, admin = false, password } : IUserRequest) {
       
       const usersRepository = getCustomRepository(UsersRepositories);
 

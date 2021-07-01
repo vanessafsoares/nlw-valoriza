@@ -18,6 +18,7 @@ node_modules/
 jspm_packages/
 package-lock.json
 src/database/database.sqlite
+*.sqlite
 
 # Optional npm cache directory
 .npm
@@ -42,6 +43,7 @@ src/database/database.sqlite
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode/
 
 # yarn v2
 .yarn/cache
